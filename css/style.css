@@ -44,7 +44,7 @@ $breakpoint argument choices
     grid-area: 5/1/9/-1 !important; }
   .grid__item--6 {
     grid-area: 9/1/13/-1 !important;
-    background-image: url(../img/drinks.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/drinks.jpg) !important;
     background-position: 50% 60% !important; } }
 
 @media (max-width: 600px) {
@@ -112,6 +112,11 @@ a:link,
 a:visited {
   text-decoration: none !important; }
 
+hr {
+  border: 0;
+  margin-top: 1.7rem !important;
+  margin-bottom: 2.2rem !important; }
+
 .section {
   transition: transform 1s, opacity 1s; }
 
@@ -126,6 +131,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: #f7f7f7; }
+
+p {
+  margin-bottom: 0 !important; }
 
 .heading-primary {
   color: #317075;
@@ -161,7 +169,7 @@ body {
     padding: 0;
     background-color: transparent;
     position: absolute;
-    top: 10rem; }
+    top: 9rem; }
     .heading-primary--header--sml {
       color: white;
       text-transform: uppercase;
@@ -172,9 +180,6 @@ body {
       @media (max-width: 37.5em) {
         .heading-primary--header--sml {
           font-size: 2rem; } }
-    @media (max-width: 56.25em) {
-      .heading-primary--header {
-        padding-bottom: 2rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--header {
         font-size: 6rem; } }
@@ -185,10 +190,10 @@ body {
 
 .heading-secondary {
   color: #313131;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Cinzel", serif;
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 600;
   letter-spacing: 0.6rem;
   text-align: center;
   width: 100%;
@@ -197,12 +202,13 @@ body {
 .heading-tertiary {
   color: #313131;
   font-family: "Cinzel", serif;
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 400;
   letter-spacing: 0.6rem;
   text-align: center;
   width: 100%;
-  padding: 4rem 0 1rem 0; }
+  padding: 4rem 0 1rem 0;
+  text-transform: capitalize; }
 
 .text {
   font-family: "Montserrat", sans-serif !important;
@@ -228,7 +234,7 @@ body {
   .text--sml {
     font-family: "Montserrat", sans-serif !important;
     font-size: 1.6rem !important;
-    font-weight: 300 !important; }
+    font-weight: 400 !important; }
   .text--bold {
     font-family: "Raleway", sans-serif !important;
     font-size: 2rem !important;
@@ -241,19 +247,21 @@ body {
 
 .link-title {
   font-family: "Cinzel", serif;
-  font-size: 2.6rem;
-  letter-spacing: 5px;
-  font-weight: 600;
+  font-size: 3.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
   color: white !important;
-  text-transform: uppercase;
+  text-transform: capitalize;
   height: 100% !important;
   width: 100% !important;
-  z-index: 99999; }
+  z-index: 99999;
+  line-height: 5rem; }
   .link-title--small {
     font-size: 2.2rem !important; }
   @media (max-width: 37.5em) {
     .link-title {
-      font-size: 2.4rem; } }
+      font-size: 5rem;
+      line-height: 9rem; } }
 
 .small-title {
   text-align: center;
@@ -1010,7 +1018,6 @@ body {
   height: 70rem;
   margin: 0 auto;
   position: relative;
-  padding: 0;
   /* IN THE END */
   overflow: hidden !important; }
   @media (max-width: 75em) {
@@ -1019,13 +1026,15 @@ body {
 
 .hero1 {
   background-image: linear-gradient(black, transparent, black), url(../img/hero1.jpg);
-  background-size: cover;
-  background-position: top !important; }
+  background-size: cover; }
 
 .hero2 {
+  background-image: linear-gradient(black, transparent, black), url(../img/hero2.jpg);
+  background-size: cover; }
+
+.hero3 {
   background-image: linear-gradient(black, transparent, black), url(../img/hero3.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-size: cover; }
 
 .slide {
   position: absolute;
@@ -1187,8 +1196,8 @@ body {
   color: #317075; }
 
 .content {
-  width: 85% !important;
-  max-width: 100%;
+  width: 93% !important;
+  max-width: 97%;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -1197,8 +1206,7 @@ body {
   margin: 0 auto; }
   @media (max-width: 56.25em) {
     .content {
-      width: 100% !important;
-      padding: 1rem !important; } }
+      width: 97% !important; } }
 
 .grid--10x12 {
   height: 100rem;
@@ -1244,10 +1252,14 @@ body {
       background-size: cover; }
     .grid__item--3 {
       grid-area: 1/9/4/-1;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/img1.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/img1.jpg);
+      background-size: cover; }
     .grid__item--4 {
       grid-area: 5/1/-1/5;
       background-image: url(../img/img4.jpeg); }
+      @media (max-width: 37.5em) {
+        .grid__item--4 {
+          background-image: url(../img/img4-rec.jpeg); } }
     .grid__item--5 {
       grid-area: 5/5/-1/9;
       background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/img5.jpg); }
@@ -1267,7 +1279,7 @@ body {
           grid-area: 1/1/5/-1; } }
     .grid__item--10 {
       grid-area: 1/5/5/9;
-      background-image: url(../img/gift-card.jpeg);
+      background-image: url(../img/img4.jpeg);
       background-size: cover; }
       @media (max-width: 75em) {
         .grid__item--10 {
@@ -1335,18 +1347,20 @@ body {
         height: 50rem;
         background-size: cover; } }
     .grid-menus__item--1 {
-      background-image: url(../img/drinks.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/drinks.jpg); }
     .grid-menus__item--2 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/breakfast.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/breakfast.jpg); }
     .grid-menus__item--3 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/food.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/food.jpg);
+      background-size: cover;
+      background-position: 80% 25%; }
     .grid-menus__item--4 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/kids.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/kids.jpg); }
     .grid-menus__item--5 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/gluten.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/gluten.jpg);
       background-position: 30% 50%; }
     .grid-menus__item--6 {
-      background-image: linear-gradient(rgba(137, 168, 201, 0.55), rgba(78, 124, 173, 0.5), rgba(137, 168, 201, 0.55)), url(../img/roast.jpg); }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/roast.jpg); }
 
 .header {
   width: 100% !important;
@@ -1376,6 +1390,8 @@ body {
       align-items: center;
       justify-content: space-between; } }
   .info__div {
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     width: 40rem;
     text-align: center; }
@@ -1388,11 +1404,8 @@ body {
 
 .v-line {
   height: 40rem;
-  width: 3px;
-  background-image: -webkit-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
-  background-image: -moz-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
-  background-image: -ms-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
-  background-image: -o-linear-gradient(bottom, #f0f0f0, #bababa, #f0f0f0);
+  width: 4px;
+  background-image: linear-gradient(to bottom, transparent, #317075, transparent);
   margin: 1rem 4rem;
   align-self: center; }
   @media (max-width: 75em) {
@@ -1650,7 +1663,9 @@ tr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 10rem; }
   @media (max-width: 75em) {
     .venues {
       display: grid;
@@ -1689,23 +1704,23 @@ tr {
       background-color: white;
       padding: 3rem; }
       .card-f__side--front--axe {
-        border: 1rem solid #3d8489; }
+        border: 1rem solid #317075; }
       .card-f__side--front--white {
         border: 1rem solid #909c82; }
       .card-f__side--front--duke {
-        border: 1rem solid #3d8489; }
+        border: 1rem solid #317075; }
       .card-f__side--front--swan {
         border: 1rem solid #909c82; }
     .card-f__side--back {
       transform: rotateY(180deg); }
       .card-f__side--back-axe {
-        background-image: linear-gradient(to right bottom, #57abb1, #317075); }
+        background-color: #3d8489; }
       .card-f__side--back-white {
-        background-image: linear-gradient(to right bottom, #b0bca2, #6a765d); }
+        background-color: #909c82; }
       .card-f__side--back-duke {
-        background-image: linear-gradient(to right bottom, #57abb1, #317075); }
+        background-color: #317075; }
       .card-f__side--back-swan {
-        background-image: linear-gradient(to right bottom, #b0bca2, #6a765d); }
+        background-color: #909c82; }
   .card-f:hover .card-f__side--front {
     transform: rotateY(-180deg); }
   .card-f:hover .card-f__side--back {
@@ -1738,7 +1753,7 @@ tr {
   .card-f__icon {
     padding-bottom: 2rem;
     transition: all 0.4s ease;
-    color: #515757; }
+    color: #ffffff; }
     .card-f__icon:hover {
       transform: scale(1.2, 1.2);
       color: black; }
@@ -1810,7 +1825,7 @@ tr {
         .card-f__picture--duke {
           background-image: url(../img/duke_logo.png); }
         .card-f__picture--swan {
-          background-image: url(../img/angel_logo.png); } }
+          background-image: url(../img/swan_logo.png); } }
   @media (max-width: 37.5em) {
     .card-f {
       width: 42rem !important; } }
