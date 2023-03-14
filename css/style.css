@@ -65,7 +65,7 @@ $breakpoint argument choices
     grid-area: 5/1/9/-1 !important; }
   .grid__item--6 {
     grid-area: 9/1/13/-1 !important;
-    background-image: url(../img/drinks.jpg) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.25)), url(../img/drinks.jpg) !important;
     background-position: 50% 60% !important; }
   .about__container {
     width: 85% !important;
@@ -192,7 +192,7 @@ p {
   color: #313131;
   text-transform: capitalize;
   font-family: "Cinzel", serif;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: 0.6rem;
   text-align: center;
@@ -202,7 +202,7 @@ p {
 .heading-tertiary {
   color: #313131;
   font-family: "Cinzel", serif;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 400;
   letter-spacing: 0.6rem;
   text-align: center;
@@ -258,6 +258,15 @@ p {
   line-height: 5rem; }
   .link-title--small {
     font-size: 2.2rem !important; }
+  .link-title--big {
+    font-size: 5rem !important;
+    line-height: 6.5rem;
+    letter-spacing: 0.6rem; }
+    @media (max-width: 37.5em) {
+      .link-title--big {
+        font-size: 6rem !important;
+        line-height: 7.5rem !important;
+        letter-spacing: 0.6rem !important; } }
   @media (max-width: 37.5em) {
     .link-title {
       font-size: 5rem;
@@ -1226,13 +1235,13 @@ p {
   margin-bottom: 1.5rem !important; }
   @media (max-width: 75em) {
     .grid--16x12 {
-      height: 60rem !important;
+      height: 90rem !important;
       grid-template-rows: repeat(6, 1fr);
       grid-template-columns: repeat(12, 1fr); } }
   @media (max-width: 37.5em) {
     .grid--16x12 {
       grid-template-rows: repeat(12, 1fr);
-      height: 110rem !important; } }
+      height: 140rem !important; } }
 
 .grid {
   display: grid;
@@ -1256,7 +1265,8 @@ p {
       background-size: cover; }
     .grid__item--4 {
       grid-area: 5/1/-1/5;
-      background-image: url(../img/img4.jpeg); }
+      background-image: url(../img/img4.jpeg);
+      background-size: 100% 100%; }
       @media (max-width: 37.5em) {
         .grid__item--4 {
           background-image: url(../img/img4-rec.jpeg); } }
@@ -1280,9 +1290,11 @@ p {
     .grid__item--10 {
       grid-area: 1/5/5/9;
       background-image: url(../img/img4.jpeg);
-      background-size: cover; }
-      @media (max-width: 75em) {
+      background-size: 100% 100%; }
+      @media (max-width: 56.25em) {
         .grid__item--10 {
+          background-image: url(../img/img4-rec.jpeg);
+          background-size: 100% 100% !important;
           grid-area: 4/1/-1/7; } }
       @media (max-width: 37.5em) {
         .grid__item--10 {
@@ -1377,6 +1389,9 @@ p {
   text-align: center;
   line-height: 2;
   padding-top: 4rem; }
+  .address--footer {
+    text-align: center;
+    line-height: 2; }
 
 .info {
   display: flex;
@@ -1714,7 +1729,7 @@ tr {
     .card-f__side--back {
       transform: rotateY(180deg); }
       .card-f__side--back-axe {
-        background-color: #3d8489; }
+        background-color: #317075; }
       .card-f__side--back-white {
         background-color: #909c82; }
       .card-f__side--back-duke {
@@ -1793,11 +1808,11 @@ tr {
           background-color: #ffffff;
           width: 65% !important; }
           .card-f__side--front--axe {
-            border: 1rem solid #3d8489; }
+            border: 1rem solid #317075; }
           .card-f__side--front--white {
             border: 1rem solid #909c82; }
           .card-f__side--front--duke {
-            border: 1rem solid #3d8489; }
+            border: 1rem solid #317075; }
           .card-f__side--front--swan {
             border: 1rem solid #909c82; }
         .card-f__side--back {
@@ -1825,7 +1840,7 @@ tr {
         .card-f__picture--duke {
           background-image: url(../img/duke_logo.png); }
         .card-f__picture--swan {
-          background-image: url(../img/swan_logo.png); } }
+          background-image: url(../img/angel_logo.png); } }
   @media (max-width: 37.5em) {
     .card-f {
       width: 42rem !important; } }
